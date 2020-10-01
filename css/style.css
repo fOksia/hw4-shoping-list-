@@ -1,0 +1,89 @@
+/* поменять цвет галочки и задний фон в инпут
+ :checked(чтоб было зачеркнуто после нажатия) */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 15px;
+  font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+}
+
+header {
+  background-color: #494e55;
+  color: #ec7f80;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+h1 + p {
+  margin-top: 5px;
+}
+
+.content {
+  background-color: #383d43;
+  padding: 25px;
+}
+
+ul {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  list-style: none;
+  background-color: #89849f;
+}
+
+li {
+  font-size: 25px;
+  padding: 10px;
+  color: #f9f9f9;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+ul li:hover {
+  border-color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+input:checked + label {
+  color: #bac7d7;
+  text-decoration: line-through;
+}
+
+li:nth-child(2n) {
+  background-color: #625e78;
+}
+
+[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 5px;
+}
+
+small {
+  color: #bac7d7;
+}
+
+small:before {
+  content: "(";
+}
+
+small:after {
+  content: ")";
+}
+
+footer {
+  padding: 20px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #494e55;
+  color: #ec7f73;
+  text-align: center;
+  font-size: 20px;
+}
